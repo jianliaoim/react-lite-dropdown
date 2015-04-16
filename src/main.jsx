@@ -1,20 +1,4 @@
 
-React Lite Dropdown
-----
-
-Dropdown Menu from Talk by Teambition.
-
-### Demo and supposition
-
-Demo http://teambition.github.io/react-lite-dropdown/
-
-### Usage
-
-```bash
-npm i --save react-lite-dropdown
-```
-
-```jsx
 import * as React from 'react';
 import './demo.css';
 import './style.css';
@@ -58,27 +42,3 @@ var PageApp = React.createFactory(App);
 var demo = document.querySelector('.demo');
 
 React.render(PageApp(), demo);
-```
-
-### Develop
-
-```text
-npm i
-```
-
-Develop:
-
-```bash
-gulp html # regenerate index.html
-webpack-dev-server --hot # enable live-reloading
-```
-
-Build:
-
-```bash
-gulp build
-```
-
-### License
-
-MIT

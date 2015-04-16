@@ -8,18 +8,20 @@
     "react": "^0.13.1"
   },
   "devDependencies": {
+    "babel-core": "^5.1.10",
+    "babel-loader": "^5.0.0",
     "cirru-script": "^0.2.2",
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.9.1",
+    "css-loader": "^0.10.1",
+    "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-coffee": "^2.3.1",
     "run-sequence": "^1.0.2",
-    "css-loader": "^0.10.1",
     "stir-template": "^0.1.2",
-    "del": "^1.1.1",
-    "webpack-dev-server": "^1.8.0",
     "style-loader": "^0.10.2",
-    "webpack": "^1.8.4"
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
