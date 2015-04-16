@@ -1,16 +1,9 @@
 
 var
   stir $ require :stir-template
-  html stir.html
-  head stir.head
-  body stir.body
-  div stir.div
-  link $ stir.createFactory :link
-  a $ stir.createFactory :a
-  span $ stir.createFactory :span
-  script $ stir.createFactory :script
-  meta $ stir.createFactory :meta
-  title $ stir.createFactory :title
+
+var
+  (object~ html head title body meta script link div a span) stir
 
 var
   line $ \ (text)
