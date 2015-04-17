@@ -26,8 +26,8 @@ var
           div null
             span null ":Read more at "
             a
-              object (:href :http://github.com/teambition/react-light-dropdown)
-              , :github.com/teambition/react-light-dropdown
+              object (:href :http://github.com/teambition/react-lite-dropdown)
+              , :github.com/teambition/react-lite-dropdown
             span null :.
         div
           object (:class :demo)

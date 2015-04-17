@@ -2,11 +2,41 @@
 React Lite Dropdown
 ----
 
-Dropdown Menu from Talk by Teambition.
-
-### Demo and supposition
+Dropdown component from Talk by Teambition.
 
 Demo http://teambition.github.io/react-lite-dropdown/
+
+### Properties
+
+* `displayText (React.PropTypes.string)`
+
+Text to display when selected. You will get `is-chosen` in `className` of root element when it's specified.
+
+* `defaultText (React.PropTypes.string.isRequired)`
+
+Text to display in when `displayText` is `undefined`.
+
+* `name (React.PropTypes.string)`
+
+CSS hook for this components, defaults to be `default`. Suppose it's `x`, the generated className is `is-for-x`.
+
+* `this.props.children`
+
+View to render in the menu opened when click.
+
+### Supposition
+
+This component suppose you are using it in such scenarios:
+
+* it looks like `<select>`, with default text and selected
+* but you need to render arbitrary view, rather than list of items
+* click events bubbles to `window` and menu is then closed
+
+In chinese. 中文表达更明确一些, 这个组件做了一些假定, 使用需要注意:
+
+* 基本界面类似 `<select>`, 有 选中/未选中 状态, 用 CSS hook 修改颜色
+* 打开菜单具体界面不在 Component 中控制, 要以 `this.props.children` 传入
+* 通过监听 window 的 click 事件关闭菜单, 注意不好截断
 
 ### Usage
 
@@ -14,12 +44,16 @@ Demo http://teambition.github.io/react-lite-dropdown/
 npm i --save react-lite-dropdown
 ```
 
-```jsx
-import * as React from 'react';
-import './demo.css';
-import './style.css';
+Read [src/main.jsx](main) for details:
 
-import * as LiteDropdown from './dropdown';
+[main]: https://github.com/teambition/react-lite-dropdown/blob/gh-pages/src/main.jsx
+
+```jsx
+import {default as React} from 'react';
+import './demo.css';
+
+import {default as LiteDropdown} from 'react-lite-dropdown';
+import 'react-lite-dropdown/src/style.css'; // CSS if you need
 
 var languages = 'CoffeeScript PureScript Elm CirruScript'.split(' ');
 
@@ -66,6 +100,8 @@ React.render(PageApp(), demo);
 npm i
 ```
 
+You need a static file server for the HTML files. Personally I suggest using Nginx.
+
 Develop:
 
 ```bash
@@ -73,7 +109,7 @@ gulp html # regenerate index.html
 webpack-dev-server --hot # enable live-reloading
 ```
 
-Build:
+Build (Pack and optimize js, reivision js and add entry in `index.html`):
 
 ```bash
 gulp build

@@ -1,9 +1,9 @@
 
-import * as React from 'react';
+import {default as React} from 'react';
 import './demo.css';
 import './style.css';
 
-import * as LiteDropdown from './dropdown';
+import {default as LiteDropdown} from './dropdown';
 
 var languages = 'CoffeeScript PureScript Elm CirruScript'.split(' ');
 
