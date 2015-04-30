@@ -11,7 +11,7 @@ var App = React.createClass({
   displayName: 'page-app',
   getInitialState: function() {
     return {
-      lang: void 0
+      lang: undefined
     };
   },
   onItemClick: function(lang) {

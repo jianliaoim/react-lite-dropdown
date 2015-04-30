@@ -1,11 +1,20 @@
 
-.intro {
-  font-family: Optima;
+body {
+  padding: 100px 100px 400px 100px;
   font-size: 16px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-family: Palatino, Optima, Georgia, serif;
   line-height: 1.6em;
 }
 
 .demo {
   width: 400px;
-  margin: 60px 200px;
+  margin: 60px 0px;
 }

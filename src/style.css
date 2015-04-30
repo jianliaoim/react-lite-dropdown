@@ -21,6 +21,7 @@
 }
 .light-dropdown .display,
 .light-dropdown .item {
+  padding: 0 10px;
   line-height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;

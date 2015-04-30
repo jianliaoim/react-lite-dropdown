@@ -8,21 +8,21 @@ Demo http://teambition.github.io/react-lite-dropdown/
 
 ### Properties
 
-* `displayText (React.PropTypes.string)`
+* `displayText` `(string)`
 
 Text to display when selected. You will get `is-chosen` in `className` of root element when it's specified.
 
-* `defaultText (React.PropTypes.string.isRequired)`
+* `defaultText` `(string.isRequired)`
 
-Text to display in when `displayText` is `undefined`.
+Text to display when `displayText` is `undefined`.
 
-* `name (React.PropTypes.string)`
+* `name` `(string)`
 
-CSS hook for this components, defaults to be `default`. Suppose it's `x`, the generated className is `is-for-x`.
+CSS hook for this components, defaults to `default`. Suppose it's `x`, the generated `className` is `is-for-x`.
 
 * `this.props.children`
 
-View to render in the menu opened when click.
+Content to render in the menu opened after clicked.
 
 ### Supposition
 
@@ -44,7 +44,7 @@ In chinese. 中文表达更明确一些, 这个组件做了一些假定, 使用�
 npm i --save react-lite-dropdown
 ```
 
-Read [src/main.jsx](main) for details:
+Read [src/main.jsx](main)(compiles with Babel) for details:
 
 [main]: https://github.com/teambition/react-lite-dropdown/blob/gh-pages/src/main.jsx
 
@@ -61,7 +61,7 @@ var App = React.createClass({
   displayName: 'page-app',
   getInitialState: function() {
     return {
-      lang: void 0
+      lang: undefined
     };
   },
   onItemClick: function(lang) {
