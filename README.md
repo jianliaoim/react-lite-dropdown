@@ -24,11 +24,11 @@ CSS hook for this components, defaults to `default`. Suppose it's `x`, the gener
 
 * `show` `(bool.isRequired)`
 
-Defines whether `DropdownMenu` is shown or not
+Defines whether `DropdownMenu` is shown or not.
 
 * `onToggle` `(func.isRequired)`
 
-Things happened when toggle dropdown
+Things happened when toggle dropdown.
 
 * `this.props.children`
 

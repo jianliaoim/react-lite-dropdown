@@ -16,6 +16,8 @@ var
       head null
         title null ":React Lite Dropdown"
         meta $ object (:charset :utf-8)
+        link $ object (:rel :icon)
+          :href :http://tp4.sinaimg.cn/5592259015/180/5725970590/1
         script $ object (:src data.main) (:defer true)
       body null
         div

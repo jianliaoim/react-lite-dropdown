@@ -11,13 +11,17 @@ var App = React.createClass({
   displayName: 'page-app',
   getInitialState: function() {
     return {
-      lang: undefined
+      lang: undefined,
+      showMenu: false
     };
   },
   onItemClick: function(lang) {
     return this.setState({
       lang: lang
     });
+  },
+  onMenuToggle: function() {
+    this.setState({showMenu: !this.state.showMenu});
   },
   renderLanguages: function() {
     console.log(languages);
@@ -33,6 +37,8 @@ var App = React.createClass({
     return <LiteDropdown
       displayText={this.state.lang}
       defaultText={'Click to select one'}
+      show={this.state.showMenu}
+      onToggle={this.onMenuToggle}
       name={'css-hook-demo'}>{this.renderLanguages()}</LiteDropdown>
   }
 });
