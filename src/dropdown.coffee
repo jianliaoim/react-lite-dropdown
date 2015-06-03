@@ -7,7 +7,7 @@ div = React.createFactory 'div'
 T = React.PropTypes
 
 DropdownMenu = React.createFactory React.createClass
-  displayName: 'light-dropdown-menu'
+  displayName: 'lite-dropdown-menu'
 
   propTypes:
     onClose: T.func
@@ -35,7 +35,7 @@ DropdownMenu = React.createFactory React.createClass
 
 
 module.exports = React.createClass
-  displayName: 'light-dropdown'
+  displayName: 'lite-dropdown'
 
   propTypes:
     show: T.bool.isRequired
@@ -60,7 +60,7 @@ module.exports = React.createClass
     @props.onToggle()
 
   render: ->
-    className = classnames 'light-dropdown', "is-for-#{@props.name}",
+    className = classnames 'lite-dropdown', "is-for-#{@props.name}",
       'is-chosen': @props.displayText?
 
     div className: className, onClick: @onClick,

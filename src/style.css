@@ -1,16 +1,16 @@
 
-.light-dropdown {
+.lite-dropdown {
   position: relative;
   border: 1px solid #e2e2e2;
 }
-.light-dropdown .display {
+.lite-dropdown .display {
   cursor: pointer;
   color: #a6a6a6;
 }
-.light-dropdown.is-chosen > .display {
+.lite-dropdown.is-chosen > .display {
   color: black;
 }
-.light-dropdown .dropdown {
+.lite-dropdown .dropdown {
   position: absolute;
   background: white;
   width: 100%;
@@ -19,21 +19,21 @@
   z-index: 100;
   box-shadow: 0 7px 21px rgba(0, 0, 0, 0.1);
 }
-.light-dropdown .display,
-.light-dropdown .item {
+.lite-dropdown .display,
+.lite-dropdown .item {
   padding: 0 10px;
   line-height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.light-dropdown .item {
+.lite-dropdown .item {
   cursor: pointer;
 }
-.light-dropdown .item:hover {
+.lite-dropdown .item:hover {
   background: #eee;
 }
-.light-dropdown .triangle {
+.lite-dropdown .triangle {
   position: absolute;
   top: 18px;
   right: 10px;

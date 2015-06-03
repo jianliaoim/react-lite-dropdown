@@ -30,7 +30,10 @@ gulp.task 'del', (cb) ->
   del [ 'build' ], cb
 
 gulp.task 'webpack', (cb) ->
-  command = if env.dev then 'webpack' else 'webpack --config webpack.min.coffee'
+  if env.dev
+    command = 'webpack'
+  else
+    command = 'webpack --config webpack.min.coffee --progress'
   exec command, (err, stdout, stderr) ->
     console.log stdout
     console.log stderr
