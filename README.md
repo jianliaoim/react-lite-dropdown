@@ -4,7 +4,7 @@ React Lite Dropdown
 
 Dropdown component from Talk by Teambition.
 
-Demo http://teambition.github.io/react-lite-dropdown/
+Demo http://ui.talk.ai/react-lite-dropdown/
 
 ### Properties
 

@@ -2,6 +2,7 @@
 .lite-dropdown {
   position: relative;
   border: 1px solid #e2e2e2;
+  border-radius: 3px;
 }
 .lite-dropdown .display {
   cursor: pointer;

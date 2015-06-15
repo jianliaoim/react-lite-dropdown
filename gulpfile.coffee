@@ -1,4 +1,3 @@
-'use strict'
 
 gulp = require('gulp')
 sequence = require('run-sequence')
@@ -7,12 +6,28 @@ env =
   dev: true
   main: 'http://localhost:8080/build/main.js'
 
-gulp.task 'coffee', ->
+gulp.task 'script', ->
   coffee = require('gulp-coffee')
   gulp
   .src 'src/*.coffee'
   .pipe coffee()
   .pipe gulp.dest('lib/')
+
+gulp.task 'rsync', (cb) ->
+  wrapper = require 'rsyncwrapper'
+  wrapper.rsync
+    ssh: true
+    src: ['index.html', 'build']
+    recursive: true
+    args: ['--verbose']
+    dest: 'talk-ui:/teambition/server/talk-ui/react-lite-dropdown'
+    deleteAll: true
+  , (error, stdout, stderr, cmd) ->
+    if error?
+      throw error
+    console.error stderr
+    console.log cmd
+    cb()
 
 gulp.task 'html', (cb) ->
   require('cirru-script/lib/register')
