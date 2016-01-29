@@ -5,7 +5,7 @@
   "main": "lib/dropdown.js",
   "dependencies": {
     "classnames": "^1.2.0",
-    "react": "^0.13.1"
+    "react": "^0.14.7"
   },
   "devDependencies": {
     "babel-core": "^5.1.10",
@@ -17,6 +17,7 @@
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-coffee": "^2.3.1",
+    "react-dom": "^0.14.7",
     "rsyncwrapper": "^0.4.3",
     "run-sequence": "^1.0.2",
     "stir-template": "^0.1.4",
@@ -25,7 +26,8 @@
     "webpack-dev-server": "^1.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build && gulp script",
+    "dev": "gulp html && webpack-dev-server --hot"
   },
   "keywords": [
     "react-component",

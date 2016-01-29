@@ -1,5 +1,6 @@
 
 import {default as React} from 'react';
+import {default as ReactDOM} from 'react-dom';
 import './demo.css';
 import './style.css';
 
@@ -47,4 +48,4 @@ var PageApp = React.createFactory(App);
 
 var demo = document.querySelector('.demo');
 
-React.render(PageApp(), demo);
+ReactDOM.render(PageApp(), demo);
