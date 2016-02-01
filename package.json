@@ -4,7 +4,7 @@
   "description": "Dropdown menu from Talk by teambition",
   "main": "lib/dropdown.js",
   "dependencies": {
-    "classnames": "^1.2.0",
+    "classnames": "^2.2.3",
     "react": "^0.14.7"
   },
   "devDependencies": {
