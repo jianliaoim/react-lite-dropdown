@@ -1,6 +1,6 @@
 {
   "name": "react-lite-dropdown",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dropdown menu from Talk by teambition",
   "main": "lib/dropdown.js",
   "dependencies": {
